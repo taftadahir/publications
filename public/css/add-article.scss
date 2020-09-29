@@ -1,0 +1,13 @@
+.value.check {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    * {
+        width: fit-content !important;
+    }
+    &>label {
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,104 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    margin-top: 1.6rem;
+    border: none;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background-color: red;
+    &>.caroussel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &>.slider {
+            width: 100%;
+            height: 100%;
+            &>.slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 1000ms ease;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                &:nth-child(1) {
+                    background-color: var(--color-orange-primary);
+                    opacity: 1;
+                    z-index: 1;
+                }
+                &:nth-child(2) {
+                    background-color: aqua;
+                }
+                &:nth-child(3) {
+                    background-color: cadetblue;
+                }
+            }
+        }
+        &>.controls {
+            pointer-events: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+            height: 20%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            &>.arrow {
+                border: none;
+                outline: none;
+                pointer-events: all;
+                cursor: pointer;
+                //position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                background-color: rgba($color: #ff8409, $alpha: .3);
+                height: 4rem;
+                transition: all 500ms ease;
+                -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                opacity: 1;
+                visibility: visible;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            &>.arrow:hover {
+                background-color: rgba($color: #ff8409, $alpha: .5);
+            }
+            &>.arrow.arrow-prev {
+                margin-left: 5rem;
+            }
+            &>.arrow.arrow-next {
+                margin-right: 5rem;
+            }
+        }
+    }
+}

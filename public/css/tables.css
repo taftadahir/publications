@@ -1,0 +1,146 @@
+table.content-table {
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-width: 60rem;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+table.content-table > thead th {
+  position: relative;
+  cursor: pointer;
+  border-right: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+table.content-table > thead th > span {
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+table.content-table > thead th > span:first-child {
+  padding-right: 2rem;
+}
+
+table.content-table > thead th > span:last-child {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  font-size: 1.6rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+table.content-table > thead th.titre {
+  min-width: 30rem;
+}
+
+table.content-table > thead th.source {
+  min-width: 10rem;
+}
+
+table.content-table > thead th.date-publication {
+  max-width: 20rem;
+}
+
+table.content-table > thead th.auteurs {
+  min-width: 20rem;
+}
+
+table.content-table > thead th.actions {
+  max-width: 10rem;
+}
+
+table.content-table > thead tr {
+  background-color: var(--cop);
+  color: var(--cwp);
+  text-align: left;
+  font-weight: 400;
+}
+
+table.content-table th,
+table.content-table td {
+  padding: 1.2rem 2rem;
+}
+
+table.content-table tbody td a {
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+table.content-table tbody td a:hover {
+  color: var(--cop);
+}
+
+table.content-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table.content-table tbody tr:nth-last-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+table.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--cop);
+}
+
+table.content-table tbody td button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+table.content-table tbody td button:hover {
+  color: var(--cre);
+}
+
+table.content-table th.th-sort-asc::after,
+table.content-table th.th-sort-desc::after {
+  margin-left: .5rem;
+}
+
+table.content-table th.th-sort-asc,
+table.content-table th.th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-tables {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.table-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-title > h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=tables.css.map */

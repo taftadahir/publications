@@ -1,0 +1,139 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  margin-top: 1.6rem;
+  border: none;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  background-color: red;
+}
+
+.hero > .caroussel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero > .caroussel > .slider {
+  width: 100%;
+  height: 100%;
+}
+
+.hero > .caroussel > .slider > .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1000ms ease;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+}
+
+.hero > .caroussel > .slider > .slide:nth-child(1) {
+  background-color: var(--color-orange-primary);
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero > .caroussel > .slider > .slide:nth-child(2) {
+  background-color: aqua;
+}
+
+.hero > .caroussel > .slider > .slide:nth-child(3) {
+  background-color: cadetblue;
+}
+
+.hero > .caroussel > .controls {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 20%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.hero > .caroussel > .controls > .arrow {
+  border: none;
+  outline: none;
+  pointer-events: all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  background-color: rgba(255, 132, 9, 0.3);
+  height: 4rem;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  opacity: 1;
+  visibility: visible;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.hero > .caroussel > .controls > .arrow:hover {
+  background-color: rgba(255, 132, 9, 0.5);
+}
+
+.hero > .caroussel > .controls > .arrow.arrow-prev {
+  margin-left: 5rem;
+}
+
+.hero > .caroussel > .controls > .arrow.arrow-next {
+  margin-right: 5rem;
+}
+/*# sourceMappingURL=hero.css.map */

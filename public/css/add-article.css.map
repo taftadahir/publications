@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAA,MAAM,CAAC;EACT,KAAK,EAAE,WAAW;EAClB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;CAOtB;;AAZD,AAMI,MANE,AAAA,MAAM,CAMR,CAAC,CAAC;EACE,KAAK,EAAE,sBAAsB;CAChC;;AARL,AASI,MATE,AAAA,MAAM,GASN,KAAK,CAAC;EACJ,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "add-article.scss"
+    ],
+    "names": [],
+    "file": "add-article.css"
+}
